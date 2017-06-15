@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/node_modules/reveal.js/css/theme/black.css">
     {% assign stylesheets = site.static_files | where_exp: "stylesheet", "stylesheet.path contains '/stylesheets/'" %}
     {% for stylesheet in stylesheets %}
-      <link rel="stylesheet" href="{{ stylesheet.path }}">
+      <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}{{ stylesheet.path }}">
     {% endfor %}
   </head>
   <body>
     <div class="reveal">
+      <h1 class="presentation-title">Sharing is Caring</h1>
       <div class="slides">
         {{ content }}
       </div>
+      <img class="logo" src="{{ site.url }}{{ site.baseurl }}/assets/logo.png">
     </div>
     <script src="{{ site.url }}{{ site.baseurl }}/node_modules/reveal.js/js/reveal.js"></script>
     <script src="{{ site.url }}{{ site.baseurl }}/node_modules/reveal.js/lib/js/head.min.js"></script>

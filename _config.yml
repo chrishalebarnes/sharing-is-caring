@@ -1,6 +1,6 @@
-baseurl: '/strange-case'
-url: 'https://username.github.io'
-repository: username/strange-case
+baseurl: '/sharing-is-caring'
+url: 'https://chrishalebarnes.github.io'
+repository: chrishalebarnes/sharing-is-caring
 github: [metadata]
 collections:
   - slides
@@ -9,7 +9,7 @@ defaults:
       collection: slides
     values:
       layout: home
-      title: Strange Case
+      title: Shared Layouts
 sass:
   sass_dir: stylesheets
 exclude:
